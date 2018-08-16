@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:textAllCaps="false">
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="71dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="11dp"
+        android:text="start scan"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="66dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/start"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="111dp"
+        android:text="connect"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="62dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/start"
+        android:textSize="10dp"
+        android:text="stop" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="59dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/start"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="28dp"
+        android:textSize="10dp"
+        android:text="constant" />
+
+
+    <LinearLayout
+        android:id="@+id/positionButton"
+        android:layout_width="fill_parent"
+        android:layout_height="233dp"
+        android:layout_above="@+id/IPText"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"></LinearLayout>
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/message"
+        android:layout_width="232dp"
+        android:layout_height="157dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:maxLines="999"
+        android:scrollbars="vertical"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/IPText"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="162dp"
+        android:text="TextView"
+        android:textColor="@color/penBlue"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/width"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/generate"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"
+        android:text="6" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/test"
+        android:ems="10"
+        android:inputType="number"
+        android:text="10" />
+
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="77dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Generate" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/positionButton"
+        android:text="test" />
+
+
+</RelativeLayout>
